@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-float64ndarray-like",
-  "version": "0.0.6",
+  "version": "0.0.0",
   "description": "Test if a value is an ndarray-like object containing double-precision floating-point numbers.",
   "license": "Apache-2.0",
   "author": {
