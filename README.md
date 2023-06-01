@@ -24,14 +24,30 @@ limitations under the License.
 
 > Test if a value is an [ndarray][@stdlib/ndarray/ctor]-like object containing double-precision floating-point numbers.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-float64ndarray-like
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isFloat64ndarrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-float64ndarray-like@deno/mod.js';
+var isFloat64ndarrayLike = require( '@stdlib/assert-is-float64ndarray-like' );
 ```
 
 #### isFloat64ndarrayLike( value )
@@ -39,8 +55,8 @@ import isFloat64ndarrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-i
 Tests if a value is an [ndarray][@stdlib/ndarray/ctor]-like object whose underlying data type is `float64`.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
+var Float64Array = require( '@stdlib/array-float64' );
+var ndarray = require( '@stdlib/ndarray-ctor' );
 
 var arr = ndarray( 'float64', new Float64Array( [ 0, 0, 0, 0 ] ), [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
 
@@ -59,9 +75,9 @@ var bool = isFloat64ndarrayLike( arr );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import isFloat64ndarrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-float64ndarray-like@deno/mod.js';
+var ndarray = require( '@stdlib/ndarray-ctor' );
+var Float64Array = require( '@stdlib/array-float64' );
+var isFloat64ndarrayLike = require( '@stdlib/assert-is-float64ndarray-like' );
 
 var buffer = new Float64Array( [ 0, 0, 0, 0 ] );
 var arr = ndarray( 'float64', buffer, [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
@@ -91,8 +107,8 @@ out = isFloat64ndarrayLike( null );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/assert/is-float32ndarray-like`][@stdlib/assert/is-float32ndarray-like]</span><span class="delimiter">: </span><span class="description">test if a value is an ndarray-like object containing single-precision floating-point numbers.</span>
--   <span class="package-name">[`@stdlib/assert/is-ndarray-like`][@stdlib/assert/is-ndarray-like]</span><span class="delimiter">: </span><span class="description">test if a value is ndarray-like.</span>
+-   <span class="package-name">[`@stdlib/assert-is-float32ndarray-like`][@stdlib/assert/is-float32ndarray-like]</span><span class="delimiter">: </span><span class="description">test if a value is an ndarray-like object containing single-precision floating-point numbers.</span>
+-   <span class="package-name">[`@stdlib/assert-is-ndarray-like`][@stdlib/assert/is-ndarray-like]</span><span class="delimiter">: </span><span class="description">test if a value is ndarray-like.</span>
 
 </section>
 
@@ -107,7 +123,7 @@ out = isFloat64ndarrayLike( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -151,7 +167,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -167,13 +183,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-float64ndarray-like/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/deno
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-float32ndarray-like]: https://github.com/stdlib-js/assert-is-float32ndarray-like/tree/deno
+[@stdlib/assert/is-float32ndarray-like]: https://github.com/stdlib-js/assert-is-float32ndarray-like
 
-[@stdlib/assert/is-ndarray-like]: https://github.com/stdlib-js/assert-is-ndarray-like/tree/deno
+[@stdlib/assert/is-ndarray-like]: https://github.com/stdlib-js/assert-is-ndarray-like
 
 <!-- </related-links> -->
 
