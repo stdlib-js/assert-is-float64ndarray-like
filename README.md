@@ -35,30 +35,38 @@ limitations under the License.
 
 > Test if a value is an [ndarray][@stdlib/ndarray/ctor]-like object containing double-precision floating-point numbers.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-is-float64ndarray-like
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var isFloat64ndarrayLike = require( '@stdlib/assert-is-float64ndarray-like' );
+isFloat64ndarrayLike = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-float64ndarray-like@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var isFloat64ndarrayLike = require( 'path/to/vendor/umd/assert-is-float64ndarray-like/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-float64ndarray-like@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.isFloat64ndarrayLike;
+})();
+</script>
 ```
 
 #### isFloat64ndarrayLike( value )
@@ -85,10 +93,15 @@ var bool = isFloat64ndarrayLike( arr );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var ndarray = require( '@stdlib/ndarray-ctor' );
-var Float64Array = require( '@stdlib/array-float64' );
-var isFloat64ndarrayLike = require( '@stdlib/assert-is-float64ndarray-like' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-float64ndarray-like@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var buffer = new Float64Array( [ 0, 0, 0, 0 ] );
 var arr = ndarray( 'float64', buffer, [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
@@ -104,6 +117,11 @@ out = isFloat64ndarrayLike( {} );
 
 out = isFloat64ndarrayLike( null );
 // returns false
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -194,13 +212,13 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-float64ndarray-like/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-float32ndarray-like]: https://github.com/stdlib-js/assert-is-float32ndarray-like
+[@stdlib/assert/is-float32ndarray-like]: https://github.com/stdlib-js/assert-is-float32ndarray-like/tree/umd
 
-[@stdlib/assert/is-ndarray-like]: https://github.com/stdlib-js/assert-is-ndarray-like
+[@stdlib/assert/is-ndarray-like]: https://github.com/stdlib-js/assert-is-ndarray-like/tree/umd
 
 <!-- </related-links> -->
 
