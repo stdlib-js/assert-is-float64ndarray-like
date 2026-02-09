@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isFloat64ndarrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-float64ndarray-like@deno/mod.js';
+import isFloat64ndarrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-float64ndarray-like@v0.2.3-deno/mod.js';
 ```
 
 #### isFloat64ndarrayLike( value )
@@ -72,7 +72,7 @@ var bool = isFloat64ndarrayLike( arr );
 ```javascript
 import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import isFloat64ndarrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-float64ndarray-like@deno/mod.js';
+import isFloat64ndarrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-float64ndarray-like@v0.2.3-deno/mod.js';
 
 var buffer = new Float64Array( [ 0, 0, 0, 0 ] );
 var arr = ndarray( 'float64', buffer, [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
