@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isFloat64ndarrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-float64ndarray-like@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-float64ndarray-like/tags). For example,
+
+```javascript
 import isFloat64ndarrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-float64ndarray-like@v0.2.3-deno/mod.js';
 ```
 
@@ -72,7 +77,7 @@ var bool = isFloat64ndarrayLike( arr );
 ```javascript
 import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import isFloat64ndarrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-float64ndarray-like@v0.2.3-deno/mod.js';
+import isFloat64ndarrayLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-float64ndarray-like@deno/mod.js';
 
 var buffer = new Float64Array( [ 0, 0, 0, 0 ] );
 var arr = ndarray( 'float64', buffer, [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
