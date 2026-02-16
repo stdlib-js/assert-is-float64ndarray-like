@@ -37,7 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-ndarray-like": "^0.2.2",
+    "@stdlib/assert-is-ndarray-like": "^0.2.3",
     "@stdlib/ndarray-base-dtype": "^0.2.3"
   },
   "devDependencies": {
